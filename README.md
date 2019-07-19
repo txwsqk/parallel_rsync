@@ -1,4 +1,13 @@
-# parallel_rsync
+distributeCopy.py
+1. get_remote_model  
+    download file from remote to jumpserver which can ssh all server without password
+2. do_local_copy
+    copy file from jumpserver to remote
+    prepare for [3] (below)
+3. do_peer_copy
+    ssh remoteserver and rsync from [2]
+---
+# parallel_rsync [deprecated]
 
 ## 先决条件
 
